@@ -1063,11 +1063,11 @@ describe('MetaMaskInpageProvider: Miscellanea', () => {
     });
   });
 
-  describe('isMetaMask', () => {
+  describe('isKresus', () => {
     it('should be set to "true"', async () => {
       const { provider } = await getInitializedProvider();
 
-      expect(provider.isMetaMask).toBe(true);
+      expect(provider.isKresus).toBe(true);
     });
   });
 

@@ -85,9 +85,9 @@ export class MetaMaskInpageProvider extends AbstractStreamProvider {
   #networkVersion: string | null;
 
   /**
-   * Indicating that this provider is a MetaMask provider.
+   * Indicating that this provider is a Kresus provider.
    */
-  public readonly isMetaMask: true;
+  public readonly isKresus: true;
 
   /**
    * Creates a new `MetaMaskInpageProvider`.
@@ -125,7 +125,7 @@ export class MetaMaskInpageProvider extends AbstractStreamProvider {
     this._initializeStateAsync();
 
     this.#networkVersion = null;
-    this.isMetaMask = true;
+    this.isKresus = true;
 
     this._sendSync = this._sendSync.bind(this);
     this.enable = this.enable.bind(this);

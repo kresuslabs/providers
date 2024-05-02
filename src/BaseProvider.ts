@@ -413,7 +413,7 @@ export abstract class BaseProvider extends SafeEventEmitter {
 
     if (!Array.isArray(accounts)) {
       this._log.error(
-        'MetaMask: Received invalid accounts parameter. Please report this bug.',
+        'Kresus: Received invalid accounts parameter. Please report this bug.',
         accounts,
       );
       _accounts = [];
@@ -422,7 +422,7 @@ export abstract class BaseProvider extends SafeEventEmitter {
     for (const account of accounts) {
       if (typeof account !== 'string') {
         this._log.error(
-          'MetaMask: Received non-string account. Please report this bug.',
+          'Kresus: Received non-string account. Please report this bug.',
           accounts,
         );
         _accounts = [];
@@ -436,7 +436,7 @@ export abstract class BaseProvider extends SafeEventEmitter {
       // returns
       if (isEthAccounts && this._state.accounts !== null) {
         this._log.error(
-          `MetaMask: 'eth_accounts' unexpectedly updated accounts. Please report this bug.`,
+          `Kresus: 'eth_accounts' unexpectedly updated accounts. Please report this bug.`,
           _accounts,
         );
       }
@@ -474,7 +474,7 @@ export abstract class BaseProvider extends SafeEventEmitter {
   }: { accounts?: string[]; isUnlocked?: boolean } = {}) {
     if (typeof isUnlocked !== 'boolean') {
       this._log.error(
-        'MetaMask: Received invalid isUnlocked parameter. Please report this bug.',
+        'Kresus: Received invalid isUnlocked parameter. Please report this bug.',
       );
       return;
     }

@@ -1,22 +1,19 @@
 {
-  "name": "@metamask/providers",
+  "name": "@kresuslabs/providers",
   "version": "16.1.0",
   "description": "A JavaScript Ethereum provider that connects to the wallet over a stream",
   "keywords": [
-    "MetaMask",
+    "Kresus",
     "Ethereum",
     "Provider"
   ],
-  "homepage": "https://github.com/MetaMask/providers#readme",
-  "bugs": {
-    "url": "https://github.com/MetaMask/providers/issues"
-  },
+  "homepage": "https://github.com/kresuslabs/providers#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/providers.git"
+    "url": "https://github.com/kresuslabs/providers.git"
   },
   "license": "MIT",
-  "author": "MetaMask",
+  "author": "KresusLabs",
   "sideEffects": false,
   "exports": {
     ".": {
